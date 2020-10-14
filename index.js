@@ -17,7 +17,7 @@ app.use("/main", express.static(path.join(__dirname, "public", "index.html")));
 app.use(express.urlencoded({extended:false}));
 
 
-
+console.log("hello world");
 
 //Connect to DataBase
 mongoose.connect("mongodb://localhost/userinfo", { useNewUrlParser: true,  useUnifiedTopology: true  });
